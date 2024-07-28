@@ -14,7 +14,7 @@
 .pageName{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 28px;
-    margin-left: 50px;
+    margin-left: 70px;
 
 }
 
@@ -28,14 +28,14 @@
 
 .form-container {
     background-color: #f0f0f0;
-    padding: 40px;
+    padding: 10px;
     border-radius: 8px;
     text-align: left;  
 }
 
 .form-group {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     align-items:center;
 }
 
@@ -46,16 +46,31 @@ label {
     padding-right: 10px;
 }
 
-input {
-    display: flex;
-    align-content: space-between;
+input,
+select {
     flex: 1;
-    padding: 8px;
+    padding: 10px; /* Increase padding for input fields */
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
-input:focus {
+input:focus,
+select:focus {
     border-color: #007BFF;
-    outline: none;
+    outline: black;
+}
+
+select {
+    height: 110px;
+}
+
+.button {
+    text-align: center;
+}
+
+button {
+    font-size: 28px;
+    font-weight: 400;
+
 }
