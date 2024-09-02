@@ -1,6 +1,6 @@
 // Initialize EmailJS with your User ID
 (function() {
-    emailjs.init("b_shaulov@hotmail.com"); // Replace with your EmailJS User ID
+    emailjs.init("MNA2dV0DiN-UG7sE7"); // Replace with your EmailJS User ID
 })();
 
 document.getElementById('userForm').addEventListener('submit', function(event) {

@@ -7,29 +7,29 @@
     <link rel="stylesheet" href="signUp.css" />
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
-<header class="header">
-    <h1 class="title">Northwest Bible Church</h1>
-    <h3>Bless You - For All You Do</h3>
-</header>
 <body class="body">
+    <header class="header">
+        <h1 class="title">Northwest Bible Church</h1>
+        <h3>Bless You - For All You Do</h3>
+    </header>
     <p class="pageName">Volunteer Sign-Up Sheet:</p>
     <div class="form-container">
-        <form>
+        <form id="userForm">
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number:</label>
-                <input type="text" id="phone" name="phone">
+                <input type="text" id="phone" name="phone" required>
             </div>
             <div class="form-group">
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="interest">Area of Interest:</label>
-                <select id="interest" name="interest" multiple>
+                <select id="interest" name="interest" multiple required>
                     <option value="worship">Worship/Praise Team</option>
                     <option value="audio_visual">Audio/Visual</option>
                     <option value="setup_teardown">Setup/Teardown</option>
@@ -37,10 +37,10 @@
                     <option value="food_service_greeting">Food Service and Greeting</option>
                 </select>
             </div>
+            <div class="button">
+                <button type="submit">Submit</button>
+            </div>
         </form>
-    </div>
-    <div class="button">
-        <button type="submit">Submit</button>
     </div>
     <script src="signUpFormScript.js"></script>
 </body>
